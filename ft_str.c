@@ -6,13 +6,13 @@
 /*   By: ivelutin <ivelutin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 20:45:57 by ivelutin          #+#    #+#             */
-/*   Updated: 2017/12/12 14:28:41 by ivelutin         ###   ########.fr       */
+/*   Updated: 2018/01/25 17:22:53 by ivelutin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/ft_printf.h"
 
-char	*ft_null_str(t_info *info)
+char			*ft_null_str(t_info *info)
 {
 	char *temp;
 
@@ -26,10 +26,10 @@ char	*ft_null_str(t_info *info)
 		return (temp);
 	}
 	else
-		{
-			temp = ft_strdup("");
-			return (temp);
-		}
+	{
+		temp = ft_strdup("");
+		return (temp);
+	}
 }
 
 static	void	ft_str_type(t_info *info, t_vec *vec, va_list vz, char *str)
@@ -52,7 +52,7 @@ static	void	ft_str_type(t_info *info, t_vec *vec, va_list vz, char *str)
 	free(str);
 }
 
-void	ft_str(t_vec *vec, t_info *info, va_list vz)
+void			ft_str(t_vec *vec, t_info *info, va_list vz)
 {
 	char *str;
 
