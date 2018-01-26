@@ -6,7 +6,7 @@
 /*   By: ivelutin <ivelutin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 21:00:39 by ivelutin          #+#    #+#             */
-/*   Updated: 2018/01/19 15:09:05 by ivelutin         ###   ########.fr       */
+/*   Updated: 2018/01/25 17:19:53 by ivelutin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,7 @@ intmax_t	ft_int_len(char len, va_list vz)
 		else if (len == z)
 			return (va_arg(vz, ssize_t));
 	}
-	else
-		return (va_arg(vz, int));
+	return (va_arg(vz, int));
 }
 
 void		ft_float(t_vec *vec, t_info *info, va_list vz)

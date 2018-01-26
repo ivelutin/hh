@@ -6,7 +6,7 @@
 /*   By: ivelutin <ivelutin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 20:47:09 by ivelutin          #+#    #+#             */
-/*   Updated: 2018/01/19 15:05:53 by ivelutin         ###   ########.fr       */
+/*   Updated: 2018/01/25 17:19:48 by ivelutin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ uintmax_t	ft_xou_len(char len, va_list vz)
 		else if (len == z)
 			return (va_arg(vz, size_t));
 	}
-	else
-		return (va_arg(vz, unsigned int));
+	return (va_arg(vz, unsigned int));
 }
 
 void		ft_handle_alt(t_info *info, char **str)
